@@ -45,6 +45,8 @@
 
 #ifdef	GPS_LOG_DATA
 #define	LOGDATA(...)	LOGD(__VA_ARGS__)
+#else
+#define	LOGDATA(...)	((void)0)
 #endif
 
 #define ARRAY_SIZE(__arr) (sizeof(__arr)/sizeof(__arr[0]))
