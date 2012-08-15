@@ -294,7 +294,7 @@ $GPGGA,000223.036,,,,,0,0,,,M,,M,,*4E
 					else
 						LOGE( "Error parsing fix data\n");
 				} else {
-					LOGE ("no fix\n");
+					DBG("no fix\n");
 				}
 			} else
 				LOGE("bad data for %s\n",nmea);
@@ -323,7 +323,7 @@ $GPGSA,A,1,,,,,,,,,,,,,,,*1E
                                         iface->sv_status_changed = 1;
 				}
 				else
-					LOGE("%s - no fix\n",nmea);
+					DBG("%s - no fix\n",nmea);
 			} else
 				LOGE("bad data for %s\n",nmea);
 		} else if (!strcmp("$GPGSV",nmea)) {
@@ -400,7 +400,7 @@ DBG ("sat[%u]: prn:%u, el:%lf, az:%lf, snr:%lf\n",
 					else
 						LOGE("Invalid date: %s\n", tokens[1]);
 				} else 
-					LOGE("bad fix for %s\n",nmea);
+					DBG("bad fix for %s\n",nmea);
 			} else
 				LOGE("bad data for %s\n",nmea);
 		} else {
