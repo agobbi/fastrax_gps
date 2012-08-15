@@ -33,8 +33,8 @@
 #include <math.h>
 
 #define DISABLE_CLEANUP 1
-#define GPS_DEBUG
-#define GPS_LOG_DATA
+/* #define GPS_DEBUG */
+/* #define GPS_LOG_DATA */
 #define FAKEDATA 0
 
 #ifdef	GPS_DEBUG
