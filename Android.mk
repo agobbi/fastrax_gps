@@ -1,4 +1,4 @@
-ifeq ($(strip $(BOARD_USES_NMEA_GPS)),true)
+ifeq ($(strip $(BOARD_USES_FASTRAX_GPS)),true)
   LOCAL_PATH := $(call my-dir)
   include $(CLEAR_VARS)
 
